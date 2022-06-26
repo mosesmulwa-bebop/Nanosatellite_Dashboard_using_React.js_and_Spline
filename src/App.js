@@ -1,6 +1,11 @@
 import Spline from "@splinetool/react-spline";
 import styled from "styled-components";
 
+import Logo from "./images/logo.svg";
+import Laptop from "./images/laptop.svg";
+import LinkedIn from "./images/linkedin.svg";
+import Github from "./images/github.svg";
+
 export default function App() {
   return (
     <Wrapper>
@@ -15,6 +20,9 @@ export default function App() {
           status, send and receive telecommands on an easy to use dashboard.
           Review received data. Join the private beta.
         </p>
+        <button>
+          <img src={Laptop} alt="Download" /> Download for Windows
+        </button>
       </Content>
     </Wrapper>
   );
@@ -57,5 +65,14 @@ const Content = styled.div`
   h1,
   p {
     margin: 0 30px 0 100px;
+  }
+
+  button {
+    background: rgba(0, 0, 0, 0.2);
+    border: 0px;
+    font-size: 16px;
+    padding: 12px 30px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255);
   }
 `;
