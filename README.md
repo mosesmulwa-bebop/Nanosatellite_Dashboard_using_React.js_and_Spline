@@ -1,5 +1,9 @@
 # Nanosatellite_Dashboard_using_React.js_and_Spline
 
+A Website showcasing a 3D version of a Nanosatellite dashboard.
+<br>
+Made using React.js and Spline for the 3D.
+
 ## Includes Figma and Spline assets
 
 ## [DEMO](https://7klh6f.csb.app/)
