@@ -2,7 +2,7 @@ import Spline from "@splinetool/react-spline";
 import styled from "styled-components";
 
 import Logo from "./images/logo.svg";
-import Laptop from "./images/laptop.svg";
+import Laptop from "./images/laptop2.svg";
 import LinkedIn from "./images/linkedin.svg";
 import Github from "./images/github.svg";
 
@@ -18,7 +18,8 @@ export default function App() {
         <p>
           Consolidate all your Nanosatellite information in one place. Monitor
           status, send and receive telecommands on an easy to use dashboard.
-          Review received data. Join the private beta.
+          Review received data. <br />
+          Join the private beta.
         </p>
         <button>
           <img src={Laptop} alt="Download" /> Download for Windows
@@ -63,7 +64,8 @@ const Content = styled.div`
     max-width: 380px;
   }
   h1,
-  p {
+  p,
+  button {
     margin: 0 30px 0 100px;
   }
 
@@ -73,6 +75,21 @@ const Content = styled.div`
     font-size: 16px;
     padding: 12px 30px;
     border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    max-width: 280px;
+    backdrop-filter: blur(20px);
+
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+
+    transition: 1s;
+
+    :hover {
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      transform: translateY(-3px);
+    }
   }
 `;
